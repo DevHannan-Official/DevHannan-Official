@@ -1,16 +1,23 @@
-## Hi there 👋
+![](https://komarev.com/ghpvc/?username=DevHannan-Official&color=36b812)<br>
+![](https://img.shields.io/github/followers/DevHannan-Official?style=social)<br>
+![](https://img.shields.io/github/stars/DevHannan-Official?style=social)<br>
 
-<!--
-**DevHannan-Official/DevHannan-Official** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Hi, my name is Hannan 👋 and I ❤️ Coding
 
-Here are some ideas to get you started:
+**Field of interests**: Web, Mobile app, AI, Full Stack development
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- **Curriculum Vitae**: [cv.pdf](https://github.com/DevHannan-Official/DevHannan-Official/blob/main/cv.pdf) -->
+
+### Skills 🛠️
+- **Languages**:&nbsp;                         JavaScript, Python, C#, MERN, TypeScript, NextJS, React Native, EXPO, HTML, CSS
+- **DevOps**:    &nbsp;&nbsp;&nbsp;&nbsp;      Linux, Git
+
+### Work experience 👔
+| Job Position                  | Field                         | Work Period           |
+| ----------------------------- | ----------------------------- | --------------------- |
+| **Freelancer** | **Full Stack Developer**    | **2023-03 — Present** |
+
+### GitHub Stats ⭐
+[![Hannan' github stats](https://github-readme-stats.vercel.app/api?username=DevHannan-Official&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+
+More information in my [LinkedIn](https://www.linkedin.com/in/hannan-developer-029522340/) 🚀
