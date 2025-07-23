@@ -22,7 +22,7 @@ const Button = ({
       onClick={navigateTo ? () => router.push(navigateTo) : onClick}
       className={`py-3 px-6 cursor-pointer flex items-center justify-center gap-1.5 rounded-full transition-colors duration-100 ease-linear group font-medium ${
         variant === "secondary"
-          ? ""
+          ? "border border-foreground text-foreground bg-white hover:bg-gray-100"
           : variant === "liquid"
           ? ""
           : "bg-foreground text-white hover:bg-foreground/80"
