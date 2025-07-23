@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import NavTabs from "@/components/shared/nav-tabs";
 import Button from "@/components/shared/button";
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const tabList = [
@@ -24,7 +26,12 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="flex items-center justify-between py-4 px-6  fixed top-5 bg-white w-full max-w-7xl rounded-full left-1/2 transform -translate-x-1/2">
+    <motion.nav
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2, duration: 0.6 }}
+      className="flex items-center justify-between py-4 px-6  fixed top-5 bg-white w-full max-w-7xl rounded-full left-1/2 transform -translate-x-1/2"
+    >
       <Link href={"/"} className="text-2xl font-special relative top-1">
         DH
       </Link>
@@ -33,10 +40,10 @@ const Navbar = () => {
       <section>
         <Button navigateTo="/login">
           Login
-          <ArrowUpRight className="relative transition ease-in-out duration-100 translate-[0.121rem] group-hover:translate-x-1 group-hover:-translate-y-0.5" />
+          <ArrowUpRight className="relative transition ease-in-out duration-100 translate-[0.121rem] group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />
         </Button>
       </section>
-    </nav>
+    </motion.nav>
   );
 };
 
