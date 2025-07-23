@@ -2,14 +2,7 @@
 
 import Button from "@/components/shared/button";
 import { motion } from "framer-motion";
-import {
-  Code2,
-  Smartphone,
-  Globe,
-  LayoutGrid,
-  Zap,
-  ArrowUpRight,
-} from "lucide-react";
+import { Code2, Smartphone, Zap, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
