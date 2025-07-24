@@ -7,12 +7,16 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[90vh] text-center px-6 bg-[#f9f9f5] gap-5 pt-10">
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center min-h-[90vh] text-center px-6 bg-[#f9f9f5] gap-5 pt-10"
+    >
       {/* Avatar with status */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4, delay: 0.1 }}
         className="relative mb-6"
       >
         <div className="w-24 h-24 rounded-full bg-gray-100 text-foreground flex items-center justify-center text-3xl font-serif">
