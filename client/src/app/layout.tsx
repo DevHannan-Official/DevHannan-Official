@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "DevHannan",
-      url: "dev-hannan.vercel.app",
+      url: "devhannan.vercel.app",
     },
   ],
   creator: "DevHannan-Official",
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     title: "DevHannan | Full Stack Developer",
     description:
       "DevHannan is a full stack developer with a passion for creating beautiful and functional websites and applications.",
-    url: "https://dev-hannan.vercel.app",
+    url: "https://devhannan.vercel.app",
     siteName: "DevHannan",
     images: [
       {
-        url: "https://dev-hannan.vercel.app/seo/og-image.png",
+        url: "https://devhannan.vercel.app/seo/og-image.png",
         width: 1200,
         height: 630,
         alt: "DevHannan Open Graph Image",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "DevHannan | Full Stack Developer",
     description:
       "DevHannan is a full stack developer with a passion for creating beautiful and functional websites and applications.",
-    images: ["https://dev-hannan.vercel.app/seo/og-image.png"],
+    images: ["https://devhannan.vercel.app/seo/og-image.png"],
   },
   icons: {
     icon: "/seo/favicon.ico",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: "google-site-verification-code",
+    google: "googledf5230ad505594e4",
   },
   appleWebApp: {
     capable: true,
