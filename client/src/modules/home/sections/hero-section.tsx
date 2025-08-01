@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center min-h-[90vh] text-center px-6 bg-[#f9f9f5] gap-5 pt-10"
+      className="flex flex-col items-center justify-center min-h-[80vh] text-center px-6 bg-[#f9f9f5] md:gap-5 pt-10"
     >
       {/* Avatar with status */}
       <motion.div
@@ -30,7 +30,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-5xl md:text-6xl font-serif text-black mb-2"
+        className="text-3xl sm:text-5xl md:text-6xl font-serif text-black mb-2"
       >
         Hey, I&apos;m Hannan
       </motion.h1>
@@ -40,7 +40,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-xl md:text-2xl text-gray-700 font-light mb-6 h-10"
+        className="text-md sm:text-lg md:text-xl text-gray-700 font-light mb-6 h-10"
       >
         <Typewriter
           words={[
@@ -63,12 +63,20 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
-        className="flex flex-col sm:flex-row gap-4"
+        className="flex flex-col sm:flex-row gap-4 w-full items-center justify-center"
       >
-        <Button navigateTo="#projects" variant="primary">
+        <Button
+          navigateTo="#projects"
+          variant="primary"
+          additionalClass="w-full sm:w-fit"
+        >
           View Projects
         </Button>
-        <Button navigateTo="#contact" variant="secondary">
+        <Button
+          navigateTo="#contact"
+          variant="secondary"
+          additionalClass="w-full sm:w-fit"
+        >
           Let’s Talk
         </Button>
       </motion.div>
@@ -94,7 +102,7 @@ const HeroSection = () => {
           </span>
         </div>
 
-        <div className="text-sm text-gray-500 mt-2 flex items-center gap-2">
+        <div className="text-sm text-gray-500 mt-2 flex items-center flex-col md:flex-row gap-2">
           Reach out anytime 👉
           <Link
             href="mailto:dev.hannan.official@gmail.com"

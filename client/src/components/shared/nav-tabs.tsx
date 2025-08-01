@@ -21,14 +21,14 @@ const NavTabs = ({ tabs }: propTypes) => {
         <Link
           key={tab.path}
           href={tab.path}
-          className={`px-1 py-1.5 md:py-2 md:px-3 text-foreground hover:opacity-100 transition-opacity duration-100 ease-linear tab ${
+          className={`px-1 py-1.5 sm:py-2 sm:px-3 text-foreground hover:opacity-100 transition-opacity duration-100 ease-linear tab ${
             activePath === tab.path
               ? "opacity-100 font-medium activeTab"
               : "opacity-70 font-normal"
           }`}
         >
-          <tab.icon size={20} />
-          <li className="hidden md:flex">{tab.name}</li>
+          <tab.icon size={20} className="flex sm:hidden" />
+          <li className="hidden sm:flex">{tab.name}</li>
         </Link>
       ))}
     </ul>
