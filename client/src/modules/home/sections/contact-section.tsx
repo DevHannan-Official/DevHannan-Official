@@ -20,16 +20,16 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-6 text-3xl  md:text-6xl font-serif text-black mb-10"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
         >
           <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
           Let&apos;s Work Together
           <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
         </motion.h2>
-        <div className=" w-full flex items-center justify-between gap-8">
+        <div className=" w-full flex  items-center justify-between gap-8 flex-col md:flex-row">
           <section className="flex-1/3">
-            <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
-              <form className="w-full max-w-lg bg-white border border-gray-200 rounded-2xl p-6">
+            <div className="flex gap-10 items-center justify-between">
+              <form className="w-full max-w-lg bg-white border border-gray-200 rounded-2xl p-6 mt-5">
                 <div className="mb-4">
                   <label
                     htmlFor="name"
@@ -72,7 +72,9 @@ const ContactSection = () => {
                   ></textarea>
                 </div>
                 <div>
-                  <Button variant="primary">Send Message</Button>
+                  <Button variant="primary" additionalClass="w-full sm:w-fit">
+                    Send Message
+                  </Button>
                 </div>
                 <div className="text-center mt-10 flex items-center justify-center gap-2">
                   <MessageCircleWarning size={16} className="text-gray-600" />{" "}
@@ -88,22 +90,22 @@ const ContactSection = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-3xl font-medium text-center mt-10"
+              className=" text-xl sm:text-2xl md:text-3xl font-medium text-center mt-10"
             >
               Or reach out directly at:
             </motion.h3>
             <div className="mt-4 text-start flex flex-col items-start gap-4">
-              <p className="text-lg text-gray-700">
-                <Mail size={20} className="inline mr-2" />
+              <p className="text-md sm:text-lg text-gray-700">
                 <Link
                   href="mailto:dev.hannan.official@gmail.com"
-                  className="underline"
+                  className="underline flex items-center gap-1"
                 >
+                  <Mail size={20} className="inline" />
                   dev.hannan.official@gmail.com
                 </Link>
               </p>
             </div>
-            <div className="text-start flex flex-row items-center gap-8 mt-4">
+            <div className="text-start flex flex-row items-center gap-4 sm:gap-6 md:gap-8 mt-4">
               <Link
                 href="https://facebook.com"
                 className="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 transition"
