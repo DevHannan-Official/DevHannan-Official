@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
+import { Monitor, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import Button from "@/components/shared/button";
 
@@ -16,9 +16,19 @@ export const ToggleTheme = () => {
   return (
     <Button
       variant="secondary"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() =>
+        setTheme(
+          theme === "dark" ? "system" : theme === "system" ? "light" : "dark"
+        )
+      }
     >
-      {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+      {theme === "dark" ? (
+        <Monitor size={16} />
+      ) : theme === "system" ? (
+        <Sun size={16} />
+      ) : (
+        <Moon size={16} />
+      )}
     </Button>
   );
 };
