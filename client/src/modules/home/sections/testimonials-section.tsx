@@ -36,7 +36,7 @@ const TestimonialSection = () => {
   return (
     <section
       id="testimonials"
-      className="py-20 bg-white relative z-10 px-6 flex flex-col items-center justify-center gap-10"
+      className="py-20 bg-[#f9f9f5] relative z-10 px-6 flex flex-col items-center justify-center gap-10"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}

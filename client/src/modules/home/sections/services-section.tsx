@@ -29,7 +29,7 @@ const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="py-20 bg-white relative z-10 px-6 flex flex-col items-center justify-center gap-10"
+      className="py-20 bg-[#f9f9f5] relative z-10 px-6 flex flex-col items-center justify-center gap-10"
     >
       <motion.h2
         initial={{ opacity: 0, y: 10 }}

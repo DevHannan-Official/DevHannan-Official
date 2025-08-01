@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import Button from "@/components/shared/button";
-import { AtSign, Mail, MessageCircleWarning, Phone } from "lucide-react";
+import { Mail, MessageCircleWarning } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
