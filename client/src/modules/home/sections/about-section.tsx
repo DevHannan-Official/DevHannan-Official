@@ -18,7 +18,7 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-6 text-3xl md:text-6xl font-serif text-black mb-5"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
         >
           <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
           About Me

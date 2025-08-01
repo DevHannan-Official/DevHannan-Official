@@ -50,13 +50,13 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-6 text-3xl  md:text-6xl font-serif text-black mb-5"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
         >
           <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
           Featured Projects
           <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
         </motion.h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl px-4 mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -74,7 +74,9 @@ const ProjectsSection = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-5">
-                <h3 className="text-xl font-medium mb-2">{project.title}</h3>
+                <h3 className="text-lg sm:text-xl font-medium mb-2">
+                  {project.title}
+                </h3>
                 <p className="text-sm text-gray-600 mb-4">
                   {project.description}
                 </p>
@@ -92,7 +94,11 @@ const ProjectsSection = () => {
         </div>
 
         <div className="mt-20 flex justify-center">
-          <Button navigateTo="/projects" variant="secondary">
+          <Button
+            navigateTo="/projects"
+            variant="secondary"
+            additionalClass="w-full sm:w-fit"
+          >
             View all
             <ArrowUpRight className="relative transition ease-in-out duration-100 translate-[0.121rem] group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />
           </Button>

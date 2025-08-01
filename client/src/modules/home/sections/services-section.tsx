@@ -35,14 +35,14 @@ const ServicesSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="flex items-center justify-center gap-6 text-3xl  md:text-6xl font-serif text-black mb-5"
+        className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
       >
         <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
         Featured Services
         <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
       </motion.h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full mx-auto px-3">
         {services.map((service, index) => (
           <motion.div
             key={index}
@@ -50,10 +50,10 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.6 }}
-            className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-gray-300  transition flex flex-col items-center w-full max-w-80"
+            className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-gray-300  transition flex flex-col items-center w-full"
           >
             <div className="mb-4">{service.icon}</div>
-            <h3 className="text-xl font-semibold mb-2 text-center">
+            <h3 className=" text-lg sm:text-xl font-semibold mb-2 text-center">
               {service.title}
             </h3>
             <p className="text-sm text-gray-700 text-center">
@@ -62,7 +62,11 @@ const ServicesSection = () => {
           </motion.div>
         ))}
       </div>
-      <Button navigateTo="/services" variant="secondary">
+      <Button
+        navigateTo="/services"
+        variant="secondary"
+        additionalClass="w-full sm:w-fit"
+      >
         View all
         <ArrowUpRight className="relative transition ease-in-out duration-100 translate-[0.121rem] group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />
       </Button>
