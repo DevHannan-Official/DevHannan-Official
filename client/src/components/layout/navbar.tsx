@@ -12,6 +12,7 @@ import {
   Settings2,
 } from "lucide-react";
 import { motion } from "motion/react";
+import { ToggleTheme } from "../utils/toggle-theme";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -64,7 +65,7 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className={`transition-transform duration-300 w-full max-w-7xl  px-4 py-3 sm:px-5 md:px-6 sm:py-4 rounded-full bg-white border-b border-gray-100 flex items-center justify-between ${
+        className={`transition-transform duration-300 w-full max-w-7xl  px-3 py-3 sm:px-5 md:px-6 sm:py-4 rounded-full bg-base border-b border-bg-sec flex items-center justify-between ${
           showNavbar ? "translate-y-0" : "-translate-y-28"
         }`}
       >
@@ -76,7 +77,8 @@ const Navbar = () => {
         </Link>
         <NavTabs tabs={tabList} />
 
-        <section>
+        <section className="flex items-center gap-1.5 sm:gap-2 md:gap-4">
+          <ToggleTheme />
           <Button navigateTo="/login">
             <span className="hidden md:flex">Login</span>
             <ArrowUpRight className="hidden md:flex relative transition ease-in-out duration-100 translate-[0.121rem] group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />

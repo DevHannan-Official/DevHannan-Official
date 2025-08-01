@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center min-h-[80vh] text-center px-6 bg-[#f9f9f5] md:gap-5 pt-10"
+      className="flex flex-col items-center justify-center min-h-[80vh] text-center px-6 bg-background md:gap-5 pt-10"
     >
       {/* Avatar with status */}
       <motion.div
@@ -19,7 +19,7 @@ const HeroSection = () => {
         transition={{ duration: 0.4, delay: 0.1 }}
         className="relative mb-6"
       >
-        <div className="w-24 h-24 rounded-full bg-gray-100 text-foreground flex items-center justify-center text-3xl font-serif">
+        <div className="w-24 h-24 rounded-full bg-bg-sec text-foreground flex items-center justify-center text-3xl font-serif">
           HD
         </div>
         <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-green-500 border-2 border-white"></span>
@@ -30,7 +30,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-3xl sm:text-5xl md:text-6xl font-serif text-black mb-2"
+        className="text-3xl sm:text-5xl md:text-6xl font-serif text-foreground mb-2"
       >
         Hey, I&apos;m Hannan
       </motion.h1>
@@ -40,7 +40,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-md sm:text-lg md:text-xl text-gray-700 font-light mb-6 h-10"
+        className="text-md sm:text-lg md:text-xl text-foreground/60 font-light mb-6 h-10"
       >
         <Typewriter
           words={[
@@ -85,19 +85,19 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}
-        className="mt-8 text-gray-600 flex flex-col items-center gap-4"
+        className="mt-8 text-foreground/60 flex flex-col items-center gap-4"
       >
         <div className="flex flex-wrap justify-center gap-3 text-sm">
-          <span className="px-3 py-1 bg-gray-100 rounded-full">
+          <span className="px-4 py-2 bg-bg-sec rounded-full">
             🚀 Fast Delivery
           </span>
-          <span className="px-3 py-1 bg-gray-100 rounded-full">
+          <span className="px-4 py-2 bg-bg-sec rounded-full">
             🛠️ Modern Technologies
           </span>
-          <span className="px-3 py-1 bg-gray-100 rounded-full">
+          <span className="px-4 py-2 bg-bg-sec rounded-full">
             🧠 AI Integrations
           </span>
-          <span className="px-3 py-1 bg-gray-100 rounded-full">
+          <span className="px-4 py-2 bg-bg-sec rounded-full">
             🌐 Global Clients
           </span>
         </div>
@@ -106,7 +106,7 @@ const HeroSection = () => {
           Reach out anytime 👉
           <Link
             href="mailto:dev.hannan.official@gmail.com"
-            className="underline underline-offset-2 hover:text-gray-600 transition-colors duration-100 ease-linear"
+            className="underline underline-offset-2 hover:text-foreground/60 transition-colors duration-100 ease-linear"
           >
             dev.hannan.official@gmail.com
           </Link>

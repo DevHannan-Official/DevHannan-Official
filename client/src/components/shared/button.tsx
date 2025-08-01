@@ -22,10 +22,10 @@ const Button = ({
       onClick={navigateTo ? () => router.push(navigateTo) : onClick}
       className={` p-3 sm:py-3 sm:px-6 cursor-pointer flex items-center justify-center gap-1.5 rounded-full transition-colors duration-100 ease-linear group font-medium ${
         variant === "secondary"
-          ? "border border-foreground text-foreground bg-white hover:bg-gray-100"
+          ? "border border-foreground text-foreground bg-base hover:bg-bg-sec"
           : variant === "liquid"
           ? ""
-          : "bg-foreground text-white hover:bg-foreground/80"
+          : "bg-foreground text-background hover:bg-foreground/90"
       } ${additionalClass}`}
     >
       {children}

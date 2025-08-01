@@ -18,11 +18,11 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-foreground mb-5"
         >
-          <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
+          <span className="text-foreground text-2xl md:text-4xl">_|</span>
           About Me
-          <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
+          <span className="text-foreground text-2xl md:text-4xl">|_</span>
         </motion.h2>
 
         <motion.p
@@ -53,21 +53,21 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-8 text-gray-600 flex flex-wrap justify-center items-center gap-4"
+          className="mt-8 text-foreground/60 flex flex-wrap justify-center items-center gap-4"
         >
-          <span className="bg-gray-100/60 px-4 py-2 rounded-full">
+          <span className="bg-bg-sec px-4 py-2 rounded-full">
             📍 Based in Pakistan
           </span>
-          <span className="bg-gray-100/60 px-4 py-2 rounded-full">
+          <span className="bg-bg-sec px-4 py-2 rounded-full">
             🧠 AI-powered Features
           </span>
-          <span className="bg-gray-100/60 px-4 py-2 rounded-full">
+          <span className="bg-bg-sec px-4 py-2 rounded-full">
             🌍 Serving Clients Globally
           </span>
-          <span className="bg-gray-100/60 px-4 py-2 rounded-full">
+          <span className="bg-bg-sec px-4 py-2 rounded-full">
             🛠 Next.js, MERN, TS, RN and more...
           </span>
-          <span className="bg-gray-100/60 px-4 py-2 rounded-full">
+          <span className="bg-bg-sec px-4 py-2 rounded-full">
             📆 Building Since 2023
           </span>
         </motion.div>

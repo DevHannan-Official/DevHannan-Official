@@ -36,7 +36,7 @@ const TestimonialSection = () => {
   return (
     <section
       id="testimonials"
-      className="py-20 bg-[#f9f9f5] relative z-10 px-6 flex flex-col items-center justify-center gap-10"
+      className="py-20 bg-background relative z-10 px-6 flex flex-col items-center justify-center gap-10"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -49,11 +49,11 @@ const TestimonialSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-foreground mb-5"
         >
-          <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
+          <span className="text-foreground text-2xl md:text-4xl">_|</span>
           Testimonials
-          <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
+          <span className="text-foreground text-2xl md:text-4xl">|_</span>
         </motion.h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 px-4 gap-10 max-w-6xl mx-auto">
           {users.map((user, index) => (
@@ -63,7 +63,7 @@ const TestimonialSection = () => {
               whileInView={{ opacity: 1, y: 40 }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition"
+              className="bg-base border border-border rounded-2xl overflow-hidden hover:border-border-hover transition"
             >
               <div className="p-5 flex w-full items-center justify-center rounded-full">
                 {user.image ? (
@@ -75,7 +75,7 @@ const TestimonialSection = () => {
                     className="size-40 object-cover rounded-full"
                   />
                 ) : (
-                  <div className="size-40 flex items-center justify-center bg-gray-100 rounded-full">
+                  <div className="size-40 flex items-center justify-center bg-bg-sec rounded-full">
                     <UserRound size={110} />
                   </div>
                 )}
@@ -84,7 +84,7 @@ const TestimonialSection = () => {
                 <h3 className="text-lg sm:text-xl font-medium mb-2 overflow-ellipsis overflow-hidden whitespace-nowrap">
                   {user.name || "Anonymous"}
                 </h3>
-                <p className="text-sm text-gray-600 mb-4 overflow-ellipsis overflow-hidden line-clamp-3">
+                <p className="text-sm text-foreground/60 mb-4 overflow-ellipsis overflow-hidden line-clamp-3">
                   {user.description}
                 </p>
                 <div className="flex gap-4 text-sm">
@@ -94,7 +94,7 @@ const TestimonialSection = () => {
                       href={user.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-secondary hover:text-primary transition p-2 rounded-full hover:bg-gray-200"
+                      className="flex items-center gap-2 text-secondary hover:text-primary transition p-1 rounded-full hover:bg-border"
                     >
                       <Image
                         src="/vectors/linkedin-icon.svg"

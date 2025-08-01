@@ -50,11 +50,11 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-foreground mb-5"
         >
-          <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
+          <span className="text-foreground text-2xl md:text-4xl">_|</span>
           Featured Projects
-          <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
+          <span className="text-foreground text-2xl md:text-4xl">|_</span>
         </motion.h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl px-4 mx-auto">
           {projects.map((project, index) => (
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 40 }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition"
+              className="bg-base border border-border rounded-2xl overflow-hidden hover:border-border-hover transition"
             >
               <Image
                 src={project.image}
@@ -77,7 +77,7 @@ const ProjectsSection = () => {
                 <h3 className="text-lg sm:text-xl font-medium mb-2">
                   {project.title}
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-foreground/60 mb-4">
                   {project.description}
                 </p>
                 <div className="flex gap-4 text-sm">

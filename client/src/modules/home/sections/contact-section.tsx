@@ -20,54 +20,54 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
+          className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-foreground mb-5"
         >
-          <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
+          <span className="text-foreground text-2xl md:text-4xl">_|</span>
           Let&apos;s Work Together
-          <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
+          <span className="text-foreground text-2xl md:text-4xl">|_</span>
         </motion.h2>
         <div className=" w-full flex  items-center justify-between gap-8 flex-col md:flex-row">
           <section className="flex-1/3">
             <div className="flex gap-10 items-center justify-between">
-              <form className="w-full max-w-lg bg-white border border-gray-200 rounded-2xl p-6 mt-5">
+              <form className="w-full max-w-lg bg-base border border-border rounded-2xl p-6 mt-5">
                 <div className="mb-4">
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-foreground/60 mb-2"
                   >
                     Name
                   </label>
                   <input
                     id="name"
                     type="text"
-                    className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-foreground/50"
+                    className="w-full border border-border-hover rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-foreground/50"
                     placeholder="Your Name"
                   />
                 </div>
                 <div className="mb-4">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-foreground/60 mb-2"
                   >
                     Email
                   </label>
                   <input
                     id="email"
                     type="email"
-                    className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-foreground/50"
+                    className="w-full border border-border-hover rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-foreground/50"
                     placeholder="Your Email"
                   />
                 </div>
                 <div className="mb-4">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-foreground/60 mb-2"
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
-                    className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-foreground/50"
+                    className="w-full border border-border-hover rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-foreground/50"
                     placeholder="Your Message"
                   ></textarea>
                 </div>
@@ -77,8 +77,11 @@ const ContactSection = () => {
                   </Button>
                 </div>
                 <div className="text-center mt-10 flex items-center justify-center gap-2">
-                  <MessageCircleWarning size={16} className="text-gray-600" />{" "}
-                  <p className="text-gray-600 text-sm">
+                  <MessageCircleWarning
+                    size={16}
+                    className="text-foreground/60"
+                  />{" "}
+                  <p className="text-foreground/60 text-sm">
                     We&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
@@ -95,7 +98,7 @@ const ContactSection = () => {
               Or reach out directly at:
             </motion.h3>
             <div className="mt-4 text-start flex flex-col items-start gap-4">
-              <p className="text-md sm:text-lg text-gray-700">
+              <p className="text-md sm:text-lg text-foreground/60">
                 <Link
                   href="mailto:dev.hannan.official@gmail.com"
                   className="underline flex items-center gap-1"
@@ -108,7 +111,7 @@ const ContactSection = () => {
             <div className="text-start flex flex-row items-center gap-4 sm:gap-6 md:gap-8 mt-4">
               <Link
                 href="https://facebook.com"
-                className="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 transition"
+                className="flex items-center justify-center rounded-full transition opacity-80 hover:opacity-100"
               >
                 <Image
                   src="/vectors/facebook-icon.svg"
@@ -120,7 +123,7 @@ const ContactSection = () => {
 
               <Link
                 href="https://x.com"
-                className="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 transition"
+                className="flex items-center justify-center rounded-full transition opacity-80 hover:opacity-100"
               >
                 <Image
                   src="/vectors/x-icon.svg"
@@ -131,7 +134,7 @@ const ContactSection = () => {
               </Link>
               <Link
                 href="https://instagram.com"
-                className="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 transition"
+                className="flex items-center justify-center rounded-full transition opacity-80 hover:opacity-100"
               >
                 <Image
                   src="/vectors/instagram-icon.svg"
@@ -142,7 +145,7 @@ const ContactSection = () => {
               </Link>
               <Link
                 href="https://linkedin.com"
-                className="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 transition"
+                className="flex items-center justify-center rounded-full transition opacity-80 hover:opacity-100"
               >
                 <Image
                   src="/vectors/linkedin-icon.svg"

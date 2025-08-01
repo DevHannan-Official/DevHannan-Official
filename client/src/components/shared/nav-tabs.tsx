@@ -16,7 +16,7 @@ type propTypes = {
 const NavTabs = ({ tabs }: propTypes) => {
   const activePath = usePathname();
   return (
-    <ul className="flex items-center gap-4">
+    <ul className="flex items-center gap-3 sm:gap-4">
       {tabs.map((tab) => (
         <Link
           key={tab.path}

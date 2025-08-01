@@ -29,19 +29,18 @@ const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="py-20 bg-[#f9f9f5] relative z-10 px-6 flex flex-col items-center justify-center gap-10"
+      className="py-20 bg-background relative z-10 px-6 flex flex-col items-center justify-center gap-10"
     >
       <motion.h2
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-5"
+        className="flex items-center justify-center gap-2 text-2xl sm:text-3xl md:text-5xl font-serif text-foreground mb-5"
       >
-        <span className="text-gray-700 text-2xl md:text-4xl">_|</span>
+        <span className="text-foreground text-2xl md:text-4xl">_|</span>
         Featured Services
-        <span className="text-gray-700 text-2xl md:text-4xl">|_</span>
+        <span className="text-foreground text-2xl md:text-4xl">|_</span>
       </motion.h2>
-
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full mx-auto px-3">
         {services.map((service, index) => (
           <motion.div
@@ -50,13 +49,13 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.6 }}
-            className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-gray-300  transition flex flex-col items-center w-full"
+            className="bg-base rounded-2xl p-6 border border-border hover:border-border-hover transition flex flex-col items-center w-full"
           >
             <div className="mb-4">{service.icon}</div>
             <h3 className=" text-lg sm:text-xl font-semibold mb-2 text-center">
               {service.title}
             </h3>
-            <p className="text-sm text-gray-700 text-center">
+            <p className="text-sm text-foreground/60 text-center">
               {service.description}
             </p>
           </motion.div>
