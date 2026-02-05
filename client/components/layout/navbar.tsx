@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { RiMenu2Line } from "@remixicon/react";
 import { usePathname } from "next/navigation";
@@ -16,7 +15,7 @@ const Navbar = () => {
   const activePath = (path: string) => pathname === path;
   console.log(pathname);
   return (
-    <nav className="py-6 px-4 md:px-20 lg:px-56 flex items-center justify-between border-b border-border">
+    <nav className="py-6 px-4 md:px-20 lg:px-56 flex items-center justify-between border-b border-border fixed top-0 left-0 right-0 bg-background z-50 w-full">
       <section className="text-foreground/70">
         visitor
         <span className="text-foreground/85">@hannandev:-$</span>{" "}
